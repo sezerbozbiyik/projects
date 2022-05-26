@@ -63,7 +63,6 @@ header .logo {
   position: relative;
   display: flex;
   user-select: none;
-  border: 1px solid #fff 0.6;
 }
 .language:focus {
   border: 1px solid #fff;
@@ -76,9 +75,10 @@ header .logo {
   height: 100%;
   width: 100%;
 }
-.login-form select {
+.language select {
   background: transparent;
   border-radius: 3px;
+  border: 1px solid #fff 0.6;
   color: #fff;
   font-weight: 500;
   font-size: 15px;
@@ -326,7 +326,6 @@ footer .area {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
   width: 60%;
   height: 100%;
   padding-top: 70px;
@@ -340,12 +339,46 @@ footer .area h4 {
 }
 footer .area .area-links {
   margin-top: 20px;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .area .area-links li {
+  list-style-type: none;
+  margin:8px 0;
 }
 footer .area .area-links a {
   color: #757575;
   font-size: 12px;
-  margin:8px 0;
-  padding: 0;
+}
+footer span.footer-phone:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer .area .area-links li a:hover{
+  text-decoration: underline;
+}
+.footer-language{
+  width: 130px;
+  margin-bottom: 20px;
+}
+.footer-language select{
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
+  border-color: #757575;
+  color: #757575;
+}
+.footer-language .language{
+  margin-top: 15px;
+}
+.footer-language .language::after,.footer-language .language::before{
+  color: #757575;
+}
+.footer-language .language::before{
+  margin-left: 8px;
+}
+.footer-language +span{
+  color: #757575;
+  font-size: 13px;
 }
