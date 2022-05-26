@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   padding: 0;
   margin: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 html,
@@ -27,7 +31,7 @@ select {
   position: relative;
   background: url(./assets/img/main-background.jpg) no-repeat center;
   width: 100%;
-  height: 100vh;
+  height: 97vh;
   box-shadow: inset 0px 300px 300px -20px rgba(0, 0, 0, 0.9),
     inset 0px -300px 300px -20px rgba(0, 0, 0, 0.9);
 }
@@ -262,36 +266,86 @@ header .logo {
 }
 
 /* sss buttons */
-.dropdowns{
-margin-top: 50px;
+.dropdowns {
+  margin: 70px 0;
 }
 .dropdown-menu {
   padding: 20px 30px;
   background-color: #303030;
-  margin-top: 10px;
+  margin: 10px 70px 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   user-select: none;
 }
-.dropdown-menu h1{
+.dropdown-menu h1 {
   font-size: 26px;
   font-weight: 400;
 }
-.dropdown-menu i.plus-icon{
+
+.dropdown-menu i.plus-icon {
   font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
-.dropdown-content{
+.dropdown-content {
+  background-color: #303030;
+  color: #fff;
   display: none;
   user-select: none;
+  margin: 0 70px;
 }
-.dd-menu-input:checked + .dropdown-content{
+.dropdown-content p {
+  font-size: 26px;
+  margin: 0;
+  padding: 30px 30px;
+  text-align: start;
+}
+.dd-menu-input:checked + label + .dropdown-content {
   display: block;
+}
+.dd-menu-input:checked + label i.plus-icon {
+  transform: rotate(-45deg);
 }
 .dd-menu-input {
   width: 10px;
   height: 10px;
   background-color: white;
   display: none;
+}
+
+
+/* footer */
+footer{
+  height: 400px;
+  position: relative;
+}
+footer .area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  width: 60%;
+  height: 100%;
+  padding-top: 70px;
+}
+footer .area h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color:#757575;
+}
+footer .area .area-links {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .area .area-links a {
+  color: #757575;
+  font-size: 12px;
+  margin:8px 0;
+  padding: 0;
 }
